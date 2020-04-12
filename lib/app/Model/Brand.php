@@ -15,6 +15,15 @@ class Brand extends Model
      */
     public $timestamps = true ;
 
+    /**
+     * Fields that can be mass assigned.
+     *
+     * @var array
+     */
+    protected $fillable = [
+            'name'
+    ];
+
     public function Products()
     {
         return $this->hasMany('App\Model\Products','idBrand','id');

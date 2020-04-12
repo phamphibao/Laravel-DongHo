@@ -14,6 +14,8 @@ class Products extends Model
      */
     public $timestamps = true;
 
+    
+
     public function Brand()
     {
         	// belongsTo(RelatedModel, foreignKey = _id, keyOnRelatedModel = id)
