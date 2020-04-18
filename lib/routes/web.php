@@ -16,3 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::group(['prefix'=>'admin'],function(){\
+
+Route::resource('brand', 'BrandController');
+Route::resource('energy', 'EnergyController');
+Route::resource('straps', 'StrapsController');
+Route::resource('type', 'TypeController');
+
+});
