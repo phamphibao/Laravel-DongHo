@@ -25,3 +25,8 @@ Route::resource('straps', 'StrapsController');
 Route::resource('type', 'TypeController');
 
 });
+
+Route::get('demo',function()
+{
+	return view('admin.page');
+});
